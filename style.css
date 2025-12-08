@@ -4,7 +4,7 @@ body {
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    background: linear-gradient(to bottom, #2a00c2, #3500f3, #00bad2);
+    background: linear-gradient(to bottom, #200092, #2900be, #0154ad);
     background-attachment: fixed;
 }
 
@@ -80,6 +80,15 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     transition: transform .3s ease, text-shadow .3s ease;
+    background-image: url("bg\ front.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: 20px;
+    margin: 0;
+    border-bottom: 10px (linear-gradient(to bottom, blue, #00bad2));
 }
 
 .front:hover {
@@ -139,7 +148,6 @@ p {
     text-align: center;
     text-shadow: 0 0 40px rgb(1, 255, 234);
     color: rgb(255, 255, 255);
-
 }
 
 .moldura {
@@ -186,15 +194,51 @@ footer {
 
 }
 
-.topbar {
+.topbar-barra {
     background: linear-gradient(to left, black, rgb(14, 0, 74), black);
     color: #fff;
     padding: 10px 16px;
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(120, 80, 255, 0.6);
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    gap: 5px;
+    align-content: center; 
+}
+
+.topbar-menu-1 a{
+    background:radial-gradient(circle, rgb(1, 154, 231), rgb(0, 89, 255));
+    border-radius: 3px;
+    height: 25px;
+    width: 110px;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    align-items: right;
+    color: black;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.topbar-menu-2 a{
+    background:radial-gradient(circle, rgb(0, 203, 218), rgb(0, 170, 255)); height: 30px;
+    color: black;
+    border-radius: 3px;
+    height: 30px;
+    width: 79px;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.topbars{
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
 .logo {
@@ -233,9 +277,61 @@ footer {
     margin-bottom: 15px;
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(0%);
+    transition: all 2s;
+}
+
+.hidden-left{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(30%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+    transition: all 2s;
+}
+
 @media (max-width: 600px) {
     .front {
         height: 75vh;
         margin-bottom: 185px;
+        background-image: url('bg_media.jpg');
     }
+
+    .topbar-menu-1{
+        display: none;
+    }
+
+
+
+    .cartoes{
+        width: 300px;
+        height: 390px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .front {
+        height: 75vh;
+        margin-bottom: 185px;
+        background-image: url('bg_media.jpg');
+    }
+
+    .topbar-menu-1{
+        display: none;
+    }
+
+    .cartoes{
+        width: 300px;
+        height: 390px;
+    }
+
 }
