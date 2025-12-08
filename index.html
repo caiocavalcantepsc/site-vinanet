@@ -12,29 +12,40 @@
 
 <body>
 
-  <nav class="topbar">
+  <nav class="topbar-barra">
     <div class="logo">
       <img src="icone2.png" alt="">
       <span>ViNaNet</span>
     </div>
 
-    <div class="menu">
-      <a href="sobre.html" target="_blank">Sobre</a>
-      <a href="contato.html" target="_blank">Contato</a>
-    </div>
+    <nav class="topbars">
+      <div class="topbar-menu-1">
+        <a href="#tecnologia">Técnologia</a>
+        <a href="#domesticos">Domésticos</a>
+        <a href="#acessorios">Acessórios</a>
+        <a href="#livros">Livros</a>
+      </div>
+
+      <div class="topbar-menu-2">
+        <a href="sobre.html" target="_blank">Sobre</a>
+        <a href="contato.html" target="_blank">Contato</a>
+      </div>
+
+    </nav>
+
   </nav>
 
-  <div class="front">
+  <div class="front hidden">
     <!-- <img class="image" src="icone2.png" alt="" height="250" width="250"> -->
     <h1 class="front">ViNaNet</h1>
     <!-- <h2 id="h2">Produtos de todos os tipos, para todos os gostos e com preço baixo</h2> -->
   </div>
 
   <hr class="hr">
-  <h2 class="letra">Livros</h2>
+  <h2 class="letra hidden-left" id="livros">Livros</h2>
   <hr class="hr">
 
-  <div class="produtos">
+  <div class="produtos hidden">
     <section class="secoes">
       <div class="cartoes">
         <p class="titulo-produto ">Poder manipulação</p>
@@ -124,16 +135,16 @@
         <p class="descricao-produto">Clason mostra soluções ao mesmo tempo sábias e muito atuais para evitar a falta de
           dinheiro.</p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/48887Ux'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/4iNjtRA'"></button>
       </div>
 
     </section>
   </div>
 
   <hr class="hr">
-  <h2 class="letra">Acessórios</h2>
+  <h2 class="letra hidden-left" id="acessorios">Acessórios</h2>
   <hr class="hr">
-  <div class="produtos">
+  <div class="produtos hidden">
     <section class="secoes">
       <div class="cartoes">
         <p class="titulo-produto ">Boné aba reta Five Panel</p>
@@ -204,27 +215,27 @@
         </div>
         <p class="descricao-produto">Estilo tático, leve para uso ao ar livre com vários bolsos</p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/49CrYfI'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/48Y7v48'"></button>
       </div>
 
       <div class="cartoes">
         <p class="titulo-produto ">Chapéu Bucket </p>
         <div class="moldura">
-          <img src="https://m.media-amazon.com/images/I/51qpbrsBtVL._AC_SX342_.jpg" alt="" height="160" width="120">
+          <img src="https://m.media-amazon.com/images/I/51QtgYNUANL._AC_SX466_.jpg" alt="" height="190" width="120">
         </div>
         <p class="descricao-produto">Com Cordão de Ajuste Estilo Wave Praia Sol Calor Pesca Viagens Passeios</p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/49CrYfI'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/48sVgg0'"></button>
       </div>
 
     </section>
   </div>
 
   <hr class="hr">
-  <h2 class="letra">Domésticos</h2>
+  <h2 class="letra hidden-left" id="domesticos">Domésticos</h2>
   <hr class="hr">
 
-  <div class="produtos">
+  <div class="produtos hidden">
     <section class="secoes">
       <div class="cartoes">
         <p class="titulo-produto ">Copo Térmico</p>
@@ -311,16 +322,16 @@
         <p class="descricao-produto">Base Antiderrapante com Pegador Ergonômico tanto para Cozinha Profissional quanto
           Doméstica </p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/48HbW3e'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/44dzxWG'"></button>
       </div>
 
     </section>
   </div>
 
   <hr class="hr">
-  <h2 class="letra">Técnologia</h2>
+  <h2 class="letra hidden-left" id="tecnologia">Técnologia</h2>
   <hr class="hr">
-  <div class="produtos">
+  <div class="produtos hidden">
     <section class="secoes">
       <div class="cartoes">
         <p class="titulo-produto ">Fones de ouvido sem fio</p>
@@ -393,7 +404,7 @@
         </div>
         <p class="descricao-produto">Redragon Zeus Pro Preto Sem Fio 7.1 H510-PRO</p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/4ri4hzC'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/4rQXi15'"></button>
       </div>
 
       <div class="cartoes">
@@ -404,7 +415,7 @@
         <p class="descricao-produto">Caixa de Som Bluetooth, Conexão USB, Cartão de Memória, Perfeita Para Viagens,
           Festas, Praia, Botões de Controle, Impermeável</p>
         <br>
-        <button class="botao" onclick="window.location.href='https://amzn.to/4ri4hzC'"></button>
+        <button class="botao" onclick="window.location.href='https://amzn.to/4rKeN2M'"></button>
       </div>
 
     </section>
@@ -419,7 +430,7 @@
     </div>
     <p id="g">© 2025 — ViNaNet</p>
   </footer>
-
 </body>
+<script src="script.js"></script>
 
 </html>
